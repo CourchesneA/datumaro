@@ -11,7 +11,7 @@ Prune supports various methodology.
 
 `Randomized` approach is based on the most fundamental form of randomness that we are familiar with, where data is selected randomly from the dataset. `Hash-based` approach operates on hash basis like [Explorer](./explorer.md). The default model for calculating hash is CLIP, which could support both image and text modality. Supported model format is OpenVINO IR and those are uploaded in [openvinotoolkit storage](https://storage.openvinotoolkit.org/repositories/datumaro/models/). `Clustering-based` approach is based on clustering to cover unsupervised dataset either. We compute hashes for the images in the dataset or utilize label data to perform clustering.
 
-By default, datasets are updated in-place. The `-o/--output-dir` option can be used to specify another output directory. When updating in-place, use the `--overwirte` parameter (in-place updates fail by default to prevent data loss), unless a project target is modified.
+By default, datasets are updated in-place. The `-o/--output-dir` option can be used to specify another output directory. When updating in-place, use the `--overwrite` parameter (in-place updates fail by default to prevent data loss), unless a project target is modified.
 
 The current project (`-p/--project`) is also used as a context for plugins, so it can be useful for datasest paths having custom formats. When not specified, the current project's working tree is used.
 
